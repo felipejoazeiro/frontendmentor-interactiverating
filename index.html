@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <main>
+    <section>
+      <form id="submitSection"action="" class="container-fluid">
+        <div class="c-img">
+          <img src="images/icon-star.svg" alt="Icon Star!">
+        </div>
+        <div class="c-title">
+          <h1>How did we do?</h1>
+        </div>
+        <div class="c-text">
+          Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+        </div>
+        <div id="select" class="c-rating d-flex justify-content-evenly">
+          <div value="0" class="rating-options">1</div>
+          <div value="1" class="rating-options">2</div>
+          <div value="2" class="rating-options">3</div>
+          <div value="3" class="rating-options">4</div>
+          <div value="4" class="rating-options">5</div>
+        </div>
+        <div class="c-submit">
+          <div id="submit-button" class="btn" type="submit">Submit</div>
+        </div>
+      </form>
+    </section>
+
+    <section id ="thxSection"  class="hidden">
+      <div class="container-fluid center ">
+        <div class="thx-img">
+          <img src="images/illustration-thank-you.svg" alt="Thanks for your review!">
+        </div>
+        <div class="thx-selected">
+          <p>You selected <span id="review-value"> </span> out of 5</p>
+        </div>
+        <div class="thx-title">
+          Thank you!
+        </div>
+        <div class="thx-text">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Felipe Joazeiro</a>.
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="script.js"></script> 
+
+</html>
